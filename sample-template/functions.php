@@ -19,3 +19,7 @@ function dokmeh_test(){
 }
 
 add_action('after_setup_theme','dokmeh_test');
+
+// include files
+
+include get_template_directory().'/inc/custom-post-type.php';
