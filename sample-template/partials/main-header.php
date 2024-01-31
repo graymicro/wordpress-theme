@@ -6,46 +6,21 @@
                 <div id="nav-section">
                     <div class="bottom-header container-fluid mega-menus" id="mega-menus">
                         <nav class="navbar navbar-toggleable-md no-border-radius no-margin mega-menu-multiple" id="navbar-inner-container">
-                            <form action="mega-menu-5.html" id="top-search" class="no-margin top-search">
+                            <form action method="get" id="top-search" class="no-margin top-search">
                                 <div class="form-group no-margin">
-                                    <input class="form-control no-border" id="search_term" name="search_term" placeholder="Type & Press Enter" type="text">
+                                    <input class="form-control no-border" id="search_term" name="s" placeholder="Type & Press Enter" type="text">
                                 </div>
                             </form>
                             <button type="button" class="navbar-toggler navbar-toggler-left" data-toggle="collapse" data-target="#mega-menu">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-                            <a class="navbar-brand mr-auto m-sm-auto" href="index.html"> <img src="img/logo.svg" alt="roxine"> <img src="img/logo-dark.svg" alt="roxine"> </a>
+                            <a class="navbar-brand mr-auto m-sm-auto" href="index.html"> <img src="<?php echo get_template_directory_uri() . '/img/logo.svg' ?>" alt="roxine"> <img src="img/logo-dark.svg" alt="roxine"> </a>
                             <div class="collapse navbar-collapse flex-row-reverse" id="mega-menu">
                                 <ul class="nav navbar-nav">
-                                    <!-- <li class="dropdown" data-animation="fadeIn"> -->
-                                    <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="index.html" data-title="Home"> Home </a> -->
-                                    <!-- </li> -->
-                                    <!-- <li class="dropdown" data-animation="fadeIn"> -->
-                                    <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="index.html" data-title="Home"> About </a> -->
-                                    <!-- </li> -->
-                                    <!-- <li class="dropdown" data-animation="fadeIn"> -->
-                                    <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="index.html" data-title="Home"> Agenda </a> -->
-                                    <!-- </li> -->
-                                    <!-- <li class="dropdown dropdown-full-width-g" data-animation="fadeIn"> -->
-                                    <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="#" data-title="Pages"> Speakers </a> -->
-                                    <!-- </li> -->
-                                    <!-- <li> -->
-                                    <!-- <a href="about.html"> Partner and sponsers</a> -->
-                                    <!-- </li> -->
-                                    <!-- <li> -->
-                                    <!-- <a href="team.html"> Media </a> -->
-                                    <!-- </li> -->
-                                    <!-- <li class="dropdown right-dropdown" data-animation="fadeIn"> -->
-                                    <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="index.html" data-title="Home"> Blog </a> -->
-                                    <!-- </li> -->
-                                    <!-- <li> -->
-                                    <!-- <a href="contact.html"> Contact </a> -->
-                                    <!-- </li> -->
-
                                     <?php if (has_nav_menu('main-menu')) : ?>
                                         <?php wp_nav_menu(array('theme_location' => 'main-menu')) ?>
                                     <?php else : ?>
-                                        <div class="header-menu-no-item">لطفا برای این قسمت یک منو انتخاب کنید</div>
+                                        <div class="header-menu-no-item-1">Please select a menu for this section</div>
                                     <?php endif; ?>
 
                                 </ul>

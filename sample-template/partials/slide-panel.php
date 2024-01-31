@@ -14,24 +14,18 @@
         </div>
         <div class="divider-border"><span class="sr-only"></span></div>
         <ul class="side-nav">
-            <!-- <li><a href="index.html">Home</a></li> -->
-            <!-- <li><a href="about.html">About</a></li> -->
-            <!-- <li><a href="blog-single.html">Blog</a></li> -->
-            <!-- <li><a href="contact.html">Contact</a></li> -->
             <?php if (has_nav_menu('main-menu')) : ?>
                 <?php wp_nav_menu(array('theme_location' => 'main-menu')) ?>
             <?php else : ?>
-                <div class="header-menu-no-item">لطفا برای این قسمت یک منو انتخاب کنید</div>
+                <div class="header-menu-no-item-2">Please select a menu for this section</div>
             <?php endif; ?>
         </ul>
         <nav class="header-links">
             <ul>
-                <!-- <li><a href="#">Login</a></li> -->
-                <!-- <li><a href="#">Register</a></li> -->
                 <?php if (has_nav_menu('complete-menu')) : ?>
                     <?php wp_nav_menu(array('theme_location' => 'complete-menu')) ?>
                 <?php else : ?>
-                    <div class="header-menu-no-item">لطفا برای این قسمت یک منو انتخاب کنید</div>
+                    <div class="header-menu-no-item-3">Please select a menu for this section</div>
                 <?php endif; ?>
             </ul>
         </nav>
