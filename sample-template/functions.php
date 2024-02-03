@@ -16,6 +16,11 @@ function dokmeh_test(){
 
     register_nav_menus($menus);
 
+    // Post Thumbnails
+    add_theme_support( 'post-thumbnails' );
+    
+    //
+    add_image_size('main-thumbnails',370,400);
 }
 
 add_action('after_setup_theme','dokmeh_test');
