@@ -22,17 +22,19 @@
             <?php get_template_part('loops/loop', 'portfolio'); ?>
             <div class="row masonary-block grid">
 
+                <div class="gallery-item col-lg-6 col-xl-4 ecommerce">
+                    <?php get_template_part('loops/loop', 'ecommerce'); ?>
+                </div>
+
                 <div class="gallery-item col-lg-6 col-xl-4 ui photography">
 
                 </div>
                 <div class="gallery-item col-lg-6 col-xl-4 photography">
 
                 </div>
-                <div class="gallery-item col-lg-6 col-xl-4 ecommerce">
-                    <?php get_template_part('loops/loop', 'ecommerce'); ?>
-                </div>
-                <div class="gallery-item col-lg-6 col-xl-4 programming">
 
+                <div class="gallery-item col-lg-6 col-xl-4 programming">
+                    <?php get_template_part('loops/loop', 'programming'); ?>
                 </div>
             </div>
         </div>
