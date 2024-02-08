@@ -27,7 +27,7 @@
                 </div>
 
                 <div class="gallery-item col-lg-6 col-xl-4 ui photography">
-
+                    <?php get_template_part('loops/loop', 'photograpy'); ?>
                 </div>
                 <div class="gallery-item col-lg-6 col-xl-4 photography">
 
@@ -144,168 +144,11 @@
                 <p>Delightful unreserved impossible few estimating men favourable see entreaties. She propriety immediate was improving. He or entrance humoured likewise moderate. Much nor game son say feel. Fat make met can must form into gate. Me we offending prevailed discovery. </p>
             </div>
             <div class="row">
-                <div class="col-md-4">
-                    <figure class="team-box caption-fade-up top-l-space">
-                        <div class="img-block">
-                            <img src="img/team-06.jpg" alt="images description">
-                        </div>
-                        <figcaption class="team-des-v2">
-                            <span class="sub">Founder / CEO</span>
-                            <strong class="content-title name">Nicola Gorani</strong>
-                            <p>Put all speaking her delicate recurred every possible. Set indulgence inquietude discretion insensible bed why announcing. Middleton fat two satisfied additions. </p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-4">
-                    <figure class="team-box caption-fade-up top-l-space">
-                        <div class="img-block">
-                            <img src="img/team-05.jpg" alt="images description">
-                        </div>
-                        <figcaption class="team-des-v2">
-                            <span class="sub">Founder / CEO</span>
-                            <strong class="content-title name">Jeremi Stralt</strong>
-                            <p>Put all speaking her delicate recurred every possible. Set indulgence inquietude discretion insensible bed why announcing. Middleton fat two satisfied additions. </p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-4">
-                    <figure class="team-box caption-fade-up top-l-space">
-                        <div class="img-block">
-                            <img src="img/team-04.jpg" alt="images description">
-                        </div>
-                        <figcaption class="team-des-v2">
-                            <span class="sub">Web Programmer</span>
-                            <strong class="content-title name">Colin Nizurb</strong>
-                            <p>Put all speaking her delicate recurred every possible. Set indulgence inquietude discretion insensible bed why announcing. Middleton fat two satisfied additions. </p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-4">
-                    <figure class="team-box caption-fade-up top-l-space">
-                        <div class="img-block">
-                            <img src="img/team-09.jpg" alt="images description">
-                        </div>
-                        <figcaption class="team-des-v2">
-                            <span class="sub">Founder / CEO</span>
-                            <strong class="content-title name">Darren Donovan</strong>
-                            <p>Put all speaking her delicate recurred every possible. Set indulgence inquietude discretion insensible bed why announcing. Middleton fat two satisfied additions. </p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-4">
-                    <figure class="team-box caption-fade-up top-l-space">
-                        <div class="img-block">
-                            <img src="img/team-08.jpg" alt="images description">
-                        </div>
-                        <figcaption class="team-des-v2">
-                            <span class="sub">Visual Design Guru</span>
-                            <strong class="content-title name">Ina Brettan</strong>
-                            <p>Put all speaking her delicate recurred every possible. Set indulgence inquietude discretion insensible bed why announcing. Middleton fat two satisfied additions. </p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-4">
-                    <figure class="team-box caption-fade-up top-l-space">
-                        <div class="img-block">
-                            <img src="img/team-07.jpg" alt="images description">
-                        </div>
-                        <figcaption class="team-des-v2">
-                            <span class="sub">Web Programmer</span>
-                            <strong class="content-title name">Leona Mattur</strong>
-                            <p>Put all speaking her delicate recurred every possible. Set indulgence inquietude discretion insensible bed why announcing. Middleton fat two satisfied additions. </p>
-                        </figcaption>
-                    </figure>
-                </div>
+                <?php get_template_part('loops/loop', 'team'); ?>
             </div>
         </div>
     </section>
-    <section class="content-block">
-        <div class="container">
-            <div class="row multiple-row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="col-wrap">
-                        <div class="post-grid reverse-grid reverse-grid">
-                            <div class="img-block post-img">
-                                <a href="#"><img src="img/img-31.jpg" alt="images"></a>
-                                <time class="post-date" datetime="2016-10-10">17 Jun</time>
-                            </div>
-                            <div class="post-text-block bg-gray-light">
-                                <strong class="content-title mb-0"><a href="#"><a href="#">Heading South</a></strong>
-                                <span class="content-sub-title">Where’s Responsive Design?</span>
-                                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Auctor, nisi elit consequat ipsum,</p>
-                                <div class="post-meta clearfix">
-                                    <div class="post-link-holder">
-                                        <a href="#">Read Story <span class="fa fa-arrow-right"><span class="sr-only">&nbsp;</span></span></a>
-                                    </div>
-                                    <div class="post-social text-right">
-                                        <ul class="social-network social-small">
-                                            <li><a href="#"><span class="icon-facebook"><span class="sr-only">&nbsp;</span></span></a></li>
-                                            <li><a href="#"><span class="icon-twitter"><span class="sr-only">&nbsp;</span></span></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="col-wrap">
-                        <div class="post-grid reverse-grid">
-                            <div class="img-block post-img">
-                                <a href="#"><img src="img/img-32.jpg" alt="images"></a>
-                                <time class="post-date" datetime="2016-10-10">17 Jun</time>
-                            </div>
-                            <div class="post-text-block bg-gray-light">
-                                <strong class="content-title mb-0"><a href="#">Product Design</a></strong>
-                                <span class="content-sub-title">Thechnology and Trends</span>
-                                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Auctor, nisi elit consequat ipsum,</p>
-                                <div class="post-meta clearfix">
-                                    <div class="post-link-holder">
-                                        <a href="#">Read Story <span class="fa fa-arrow-right"><span class="sr-only">&nbsp;</span></span></a>
-                                    </div>
-                                    <div class="post-social text-right">
-                                        <ul class="social-network social-small">
-                                            <li><a href="#"><span class="icon-facebook"><span class="sr-only">&nbsp;</span></span></a></li>
-                                            <li><a href="#"><span class="icon-twitter"><span class="sr-only">&nbsp;</span></span></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="col-wrap">
-                        <div class="post-grid reverse-grid">
-                            <div class="img-block post-img">
-                                <a href="#"><img src="img/img-33.jpg" alt="images"></a>
-                                <time class="post-date" datetime="2016-10-10">17 Jun</time>
-                            </div>
-                            <div class="post-text-block bg-gray-light">
-                                <strong class="content-title mb-0"><a href="#">Working Remotely</a></strong>
-                                <span class="content-sub-title">Home office working for you.</span>
-                                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Auctor, nisi elit consequat ipsum,</p>
-                                <div class="post-meta clearfix">
-                                    <div class="post-link-holder">
-                                        <a href="#">Read Story <span class="fa fa-arrow-right"><span class="sr-only">&nbsp;</span></span></a>
-                                    </div>
-                                    <div class="post-social text-right">
-                                        <ul class="social-network social-small">
-                                            <li><a href="#"><span class="icon-facebook"><span class="sr-only">&nbsp;</span></span></a></li>
-                                            <li><a href="#"><span class="icon-twitter"><span class="sr-only">&nbsp;</span></span></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="btn-container full-width-btn top-space">
-                <a href="javascript:void(0)" class="btn btn-black">LOAD MORE<span class="c-ripple js-ripple"><span class="c-ripple__circle"></span></span></a>
-            </div>
-        </div>
-    </section>
+
     <section class="content-block portfolio-block">
         <div class="container">
             <div class="masonary-block grid">
@@ -381,83 +224,10 @@
         <div class="container">
             <div class="row multiple-row">
                 <div class="col-md-6 col-lg-4">
-                    <div class="col-wrap">
-                        <div class="post-grid reverse-grid reverse-grid">
-                            <div class="img-block post-img">
-                                <a href="#"><img src="img/img-31.jpg" alt="images"></a>
-                                <time class="post-date" datetime="2016-10-10">17 Jun</time>
-                            </div>
-                            <div class="post-text-block bg-gray-light">
-                                <strong class="content-title mb-0"><a href="#"></a><a href="#">Heading South</a></strong>
-                                <span class="content-sub-title">Where’s Responsive Design?</span>
-                                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Auctor, nisi elit consequat ipsum,</p>
-                                <div class="post-meta clearfix">
-                                    <div class="post-link-holder">
-                                        <a href="#">Read Story <span class="fa fa-arrow-right"><span class="sr-only">&nbsp;</span></span></a>
-                                    </div>
-                                    <div class="post-social text-right">
-                                        <ul class="social-network social-small">
-                                            <li><a href="#"><span class="icon-facebook"><span class="sr-only">&nbsp;</span></span></a></li>
-                                            <li><a href="#"><span class="icon-twitter"><span class="sr-only">&nbsp;</span></span></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php get_template_part('loops/loop', 'post'); ?>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="col-wrap">
-                        <div class="post-grid reverse-grid">
-                            <div class="img-block post-img">
-                                <a href="#"><img src="img/img-32.jpg" alt="images"></a>
-                                <time class="post-date" datetime="2016-10-10">17 Jun</time>
-                            </div>
-                            <div class="post-text-block bg-gray-light">
-                                <strong class="content-title mb-0"><a href="#">Product Design</a></strong>
-                                <span class="content-sub-title">Thechnology and Trends</span>
-                                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Auctor, nisi elit consequat ipsum,</p>
-                                <div class="post-meta clearfix">
-                                    <div class="post-link-holder">
-                                        <a href="#">Read Story <span class="fa fa-arrow-right"><span class="sr-only">&nbsp;</span></span></a>
-                                    </div>
-                                    <div class="post-social text-right">
-                                        <ul class="social-network social-small">
-                                            <li><a href="#"><span class="icon-facebook"><span class="sr-only">&nbsp;</span></span></a></li>
-                                            <li><a href="#"><span class="icon-twitter"><span class="sr-only">&nbsp;</span></span></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="col-wrap">
-                        <div class="post-grid reverse-grid">
-                            <div class="img-block post-img">
-                                <a href="#"><img src="img/img-33.jpg" alt="images"></a>
-                                <time class="post-date" datetime="2016-10-10">17 Jun</time>
-                            </div>
-                            <div class="post-text-block bg-gray-light">
-                                <strong class="content-title mb-0"><a href="#">Working Remotely</a></strong>
-                                <span class="content-sub-title">Home office working for you.</span>
-                                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Auctor, nisi elit consequat ipsum,</p>
-                                <div class="post-meta clearfix">
-                                    <div class="post-link-holder">
-                                        <a href="#">Read Story <span class="fa fa-arrow-right"><span class="sr-only">&nbsp;</span></span></a>
-                                    </div>
-                                    <div class="post-social text-right">
-                                        <ul class="social-network social-small">
-                                            <li><a href="#"><span class="icon-facebook"><span class="sr-only">&nbsp;</span></span></a></li>
-                                            <li><a href="#"><span class="icon-twitter"><span class="sr-only">&nbsp;</span></span></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+
             </div>
             <div class="btn-container full-width-btn top-space">
                 <a href="javascript:void(0)" class="btn btn-black">LOAD MORE<span class="c-ripple js-ripple"><span class="c-ripple__circle"></span></span></a>

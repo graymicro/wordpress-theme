@@ -2,7 +2,7 @@
 
 $all_posts_args = array(
 
-    'post_type' => array('ecommerce','programming')
+    'post_type' => array('ecommerce','programming','photography')
 
 );
 

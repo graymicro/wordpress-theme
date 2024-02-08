@@ -22,6 +22,8 @@ function dokmeh_test()
 
     //
     add_image_size('main-thumbnails', 370, 400);
+    add_image_size('team-thumbnails', 370, 555);
+    add_image_size('post-thumbnails', 800, 533);
 }
 
 add_action('after_setup_theme', 'dokmeh_test');

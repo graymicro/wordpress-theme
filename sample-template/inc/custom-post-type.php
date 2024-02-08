@@ -123,3 +123,130 @@ function sample_template_add_ecommerce_custom_post_type()
     // Registering your Custom Post Type
     register_post_type('Ecommerce', $args);
 }
+
+// #########################################################
+
+add_action('init', 'sample_template_add_photography_custom_post_type');
+
+function sample_template_add_photography_custom_post_type()
+{
+
+    // Set UI labels for Custom Post Type
+    $labels = array(
+        'name'                => 'Photography',
+        'singular_name'       => 'Photography',
+        'menu_name'           => 'Photography',
+        'parent_item_colon'   => 'Photography',
+        'all_items'           => 'All Project',
+        'view_item'           => 'View Project',
+        'add_new_item'        => 'Add New Project',
+        'add_new'             => 'Add Project',
+        'new_item'            => 'Add Project',
+        'edit_item'           => 'Edit Project',
+        'update_item'         => 'Update Project',
+        'search_items'        => 'Search Project',
+        'parent_item_colon'   => 'Project Bese',
+        'not_found'           => 'No Project found',
+        'not_found_in_trash'  => 'Not found in Trash',
+    );
+
+    // Set other options for Custom Post Type
+
+    $args = array(
+
+        'description'         => 'Contents of template Products',
+        'labels'              => $labels,
+        // Features this CPT supports in Post Editor
+        'supports'            => array('title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields',),
+        // You can associate this CPT with a taxonomy or custom taxonomy. 
+        'taxonomies'          => array('genres'),
+        /* A hierarchical CPT is like Pages and can have
+        * Parent and child items. A non-hierarchical CPT
+        * is like Posts.
+        */
+        'hierarchical'        => false,
+        'public'              => true,
+        'show_ui'             => true,
+        'show_in_menu'        => true,
+        'show_in_nav_menus'   => true,
+        'show_in_admin_bar'   => true,
+        'menu_position'       => 5,
+        'can_export'          => true,
+        'has_archive'         => true,
+        'exclude_from_search' => false,
+        'publicly_queryable'  => true,
+        'query_var'           => true,
+        'rewite'              => array('slug' => 'photography'),
+        'menu_icon'           => 'dashicons-align-wide',
+        'capability_type'     => 'post',
+        'show_in_rest' => true,
+
+    );
+
+    // Registering your Custom Post Type
+    register_post_type('photography', $args);
+}
+
+
+// #########################################################
+
+add_action('init', 'sample_template_add_team_custom_post_type');
+
+function sample_template_add_team_custom_post_type()
+{
+
+    // Set UI labels for Custom Post Type
+    $labels = array(
+        'name'                => 'Teams',
+        'singular_name'       => 'Teams',
+        'menu_name'           => 'Teams',
+        'parent_item_colon'   => 'Teams',
+        'all_items'           => 'All Members',
+        'view_item'           => 'View Members',
+        'add_new_item'        => 'Add New Members',
+        'add_new'             => 'Add Members',
+        'new_item'            => 'Add Members',
+        'edit_item'           => 'Edit Members',
+        'update_item'         => 'Update Members',
+        'search_items'        => 'Search Members',
+        'parent_item_colon'   => 'Team Bese',
+        'not_found'           => 'No Members found',
+        'not_found_in_trash'  => 'Not found in Trash',
+    );
+
+    // Set other options for Custom Post Type
+
+    $args = array(
+
+        'description'         => 'Contents of template Products',
+        'labels'              => $labels,
+        // Features this CPT supports in Post Editor
+        'supports'            => array('title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields',),
+        // You can associate this CPT with a taxonomy or custom taxonomy. 
+        'taxonomies'          => array('genres'),
+        /* A hierarchical CPT is like Pages and can have
+        * Parent and child items. A non-hierarchical CPT
+        * is like Posts.
+        */
+        'hierarchical'        => false,
+        'public'              => true,
+        'show_ui'             => true,
+        'show_in_menu'        => true,
+        'show_in_nav_menus'   => true,
+        'show_in_admin_bar'   => true,
+        'menu_position'       => 5,
+        'can_export'          => true,
+        'has_archive'         => true,
+        'exclude_from_search' => false,
+        'publicly_queryable'  => true,
+        'query_var'           => true,
+        'rewite'              => array('slug' => 'Team'),
+        'menu_icon'           => 'dashicons-align-wide',
+        'capability_type'     => 'post',
+        'show_in_rest' => true,
+
+    );
+
+    // Registering your Custom Post Type
+    register_post_type('Team', $args);
+}
