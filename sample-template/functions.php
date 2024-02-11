@@ -26,26 +26,25 @@ function dokmeh_test()
     add_image_size('post-thumbnails', 800, 533);
 }
 
-add_action('after_setup_theme', 'dokmeh_test');
-// user functions 
-
-function get_post_view($post_id)
+function my_theme_scripts()
 {
 
-    if (intval($post_id)) {
+    if (!is_admin()) {
+        wp_deregister_script('jquery');
 
-        $post_view = get_post_meta('$post_id', 'views', true);
-        return intval($post_view);
-    }
+        wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js', false);
+    };
+    wp_enqueue_script('load-script', get_template_directory_uri() . '/js/loadmore.js', array('jquery'), null, true);
+
+    wp_localize_script('load-script','data', array('ajax_url'=>admin_url('admin-ajax.php')));
 }
+add_action('wp_enqueue_scripts', 'my_theme_scripts');
 
-function set_post_view($post_id){
 
-    $view = get_post_view($post_id);
-    $view++;
-    update_post_meta($post_id,'views',$view);
-}
+
+add_action('after_setup_theme', 'dokmeh_test');
 
 // include files
 
 include get_template_directory() . '/inc/custom-post-type.php';
+include get_template_directory() . '/inc/ajax.php';

@@ -230,7 +230,7 @@
 
             </div>
             <div class="btn-container full-width-btn top-space">
-                <a href="javascript:void(0)" class="btn btn-black">LOAD MORE<span class="c-ripple js-ripple"><span class="c-ripple__circle"></span></span></a>
+                <a data-page="1" href="javascript:void(0)" class="btn btn-black">LOAD MORE<span class="c-ripple js-ripple"><span class="c-ripple__circle"></span></span></a>
             </div>
         </div>
     </section>
