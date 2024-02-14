@@ -1,7 +1,6 @@
 <?php
 
-add_action('wp_ajax_load_more_post', 'load_more_post');
-add_action('wp_ajax_nopriv_load_more_post', 'load_more_post');
+
 
 function load_more_post()
 {
@@ -65,3 +64,6 @@ function load_more_post()
 
     die();
 };
+
+add_action('wp_ajax_load_more_post', 'load_more_post');
+add_action('wp_ajax_nopriv_load_more_post', 'load_more_post');
