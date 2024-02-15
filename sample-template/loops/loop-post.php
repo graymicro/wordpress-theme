@@ -3,7 +3,7 @@
 $all_posts_args = array(
 
     'post_type' => array('post'),
-    'posts_per_page' => 1
+    'posts_per_page' => 1,
 
 );
 
