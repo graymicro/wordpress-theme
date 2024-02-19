@@ -47,4 +47,5 @@ add_action('after_setup_theme', 'dokmeh_test');
 // include files
 
 include get_template_directory() . '/inc/custom-post-type.php';
+include get_template_directory() . '/inc/custom-taxonomy.php';
 include get_template_directory() . '/inc/ajax.php';
