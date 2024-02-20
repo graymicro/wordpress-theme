@@ -7,7 +7,7 @@ function template_add_portfolio_custom_post_type()
 
     // Set UI labels for Custom Post Type
     $labels = array(
-        'name'                => 'Portfolio',
+        'name'                => 'portfolio',
         'singular_name'       => 'Portfolio',
         'menu_name'           => 'Portfolio',
         'parent_item_colon'   => 'Portfolio',
@@ -50,7 +50,7 @@ function template_add_portfolio_custom_post_type()
         'exclude_from_search' => false,
         'publicly_queryable'  => true,
         'query_var'           => true,
-        'rewite'              => array('slug' => 'Portfolio'),
+        'rewite'              => array('slug' => 'portfolio'),
         'menu_icon'           => 'dashicons-table-col-before',
         'capability_type'     => 'post',
         'show_in_rest' => true,
@@ -58,5 +58,5 @@ function template_add_portfolio_custom_post_type()
     );
 
     // Registering your Custom Post Type
-    register_post_type('Portfolio', $args);
+    register_post_type('portfolio', $args);
 }

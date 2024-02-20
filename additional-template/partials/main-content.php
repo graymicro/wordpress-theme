@@ -216,21 +216,10 @@
       <div class="row portfolio-container justify-content-center">
 
         <div class="col-xl-10">
-          <div class="row">
 
+          <?php get_template_part('loops/loop', 'portfoilo'); ?>
 
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-active">
-              <?php get_template_part('loops/loop', 'portfoilo'); ?>
-            </div><!-- End portfolio item -->
-
-
-          </div>
         </div>
-
-      </div>
-
-    </div>
   </section><!-- End Portfolio Section -->
 
   <!-- ======= Testimonials Section ======= -->
