@@ -23,8 +23,9 @@ jQuery(document).ready(function ($) {
 
             success: function (response) {
                 if (parseInt(response.count) > 0) {
-                    $this.parent().before(response.content);
-                    $this.data('page', parseInt($page + 1));
+                    // $this.parent().before(response.content);
+                    // $this.data('page', parseInt($page + 1));
+                    $('#post-content').append(response.content);
                 }
                 $this.text('Load More');
             },

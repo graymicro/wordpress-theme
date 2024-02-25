@@ -223,7 +223,7 @@
     <section class="content-block">
         <div class="container">
             <div class="row multiple-row">
-                <div class="col-md-6 col-lg-4">
+                <div id="post-content" class="col-md-6 col-lg-4">
                     <?php get_template_part('loops/loop', 'post'); ?>
                 </div>
 
