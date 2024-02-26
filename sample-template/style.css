@@ -5223,6 +5223,20 @@ em.state-invalid {
     margin: 0;
 }
 
+.multiple-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+}
+
+#post-content {
+    width: 33.333%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
 .masonary-block .gallery-item figure img {
     width: 100%;
 }
@@ -5348,6 +5362,18 @@ main.no-banner {
 .embed-responsive {
     height: inherit;
 }
+
+
+
+.posts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 4fr));
+    /* عرض هر پست و تعداد ستون‌ها */
+    gap: 10px;
+    /* فاصله بین پست‌ها */
+}
+
+
 
 .button-block {
     text-align: center;
@@ -13564,6 +13590,9 @@ ul.content-list.info-list.bottom-space a {
     .mega-menus .navbar-off-canvas.navbar-fixed-top .off-canvas-close p a {
         text-decoration: none;
     }
+
+
+
 }
 
 @media only screen and (max-width: 990px) {

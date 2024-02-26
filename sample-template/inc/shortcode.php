@@ -1,9 +1,10 @@
 <?php
-add_shortcode('hello','hello_callback');
 
-function hello_callback($atts,$comtent=null){
 
-    // $atts = shortcode_atts(array("name"=>'World'),$atts);  //设置默认值，如
-    
-
-}
+function main_sub_title($atts, $content = null)
+{
+    if(!is_null($content)){
+        return '<h3 class="post-sub-title">'.do_shortcode($content).'</h3>';
+    };
+};
+add_shortcode('sub_title', 'main_sub_title');

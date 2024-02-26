@@ -135,19 +135,6 @@
             </div>
         </div>
     </section>
-    <section class="content-block">
-        <div class="container">
-            <div class="heading bottom-space text-center">
-                <h2>Learn. <span>Acheive.</span> Admire</h2>
-            </div>
-            <div class="description text-center">
-                <p>Delightful unreserved impossible few estimating men favourable see entreaties. She propriety immediate was improving. He or entrance humoured likewise moderate. Much nor game son say feel. Fat make met can must form into gate. Me we offending prevailed discovery. </p>
-            </div>
-            <div class="row">
-                <?php get_template_part('loops/loop', 'team'); ?>
-            </div>
-        </div>
-    </section>
 
     <section class="content-block portfolio-block">
         <div class="container">
