@@ -3,6 +3,7 @@
 $all_posts_args = array(
 
     'post_type' => array('post'),
+    'meta_key' => 'download_count',
     'posts_per_page' => 1,
 
 );

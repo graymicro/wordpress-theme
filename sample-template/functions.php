@@ -37,10 +37,30 @@ function my_theme_scripts()
 
     wp_enqueue_script('load-script', get_template_directory_uri() . '/js/loadmore.js', array('jquery'), null, true);
     wp_localize_script('load-script', 'my_ajax_object', array( 'ajaxurl' => admin_url('admin-ajax.php')));
+
+    //register download file counter
+    wp_enqueue_script('download-counter-script', get_template_directory_uri() . '/js/downloadfile.js', array('jquery'), null, true);
+    wp_localize_script('download-counter-script', 'ajax_object', array( 'ajaxurl' => admin_url('admin-ajax.php')));
 }
 add_action('wp_enqueue_scripts', 'my_theme_scripts');
 
+function get_post_download_count($post_id){
+    if(intval($post_id)){
+        $post_download_count = get_post_meta($post_id,'download_count',true);
+        return intval($post_download_count);
+    }
+}
 
+function set_post_download_count($post_id){
+    if(intval($post_id)){
+
+        $downloads = get_post_download_count( $post_id );
+        $downloads++;
+        update_post_meta($post_id, "download_count", $downloads);
+        return  $downloads;
+    }
+    return 0;
+}
 
 add_action('after_setup_theme', 'dokmeh_test');
 

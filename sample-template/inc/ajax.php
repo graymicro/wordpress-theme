@@ -59,3 +59,15 @@ function load_more_post()
 
 add_action('wp_ajax_load_more_post', 'load_more_post');
 add_action('wp_ajax_nopriv_load_more_post', 'load_more_post');
+
+//
+add_action('wp_ajax_download_counter', 'download_counter');
+add_action('wp_ajax_nopriv_download_counter', 'download_counter');
+
+function download_counter(){
+    intval($_POST['post_id']) || wp_die('no access');
+    $post_id = $_POST['post_id'];
+    $count =set_post_download_count($post_id);
+    wp_die($count);
+
+}
