@@ -39,10 +39,18 @@ get_template_part('partials/slide-panel');
                                         <div class="blog-share mt-5">
                                             <ul class="social-network with-text">
                                                 <li><strong>Share :</strong></li>
-                                                <li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_the_permalink();?>"><span class="icon-facebook"></span> Facebook</a></li>
-                                                <li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_the_permalink();?>"><span class="icon-twitter"></span> Twitter</a></li>
-                                                <li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_the_permalink();?>"><span class="icon-google-plus"></span> Google</a></li>
+                                                <li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_the_permalink(); ?>"><span class="icon-facebook"></span> Facebook</a></li>
+                                                <li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_the_permalink(); ?>"><span class="icon-twitter"></span> Twitter</a></li>
+                                                <li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_the_permalink(); ?>"><span class="icon-google-plus"></span> Google</a></li>
                                             </ul>
+                                            <div class="post-categories">
+                                                <h5 style="background-color: lightgrey;color: blue;font-weight: bold;margin-top:40px">The categories:</h5>
+                                                <?php the_category(','); ?>
+                                            </div>
+                                            <div class="post-tags">
+                                                <h5 style="background-color: lightgrey;color: blue;font-weight: bold;margin-top:40px">The Post Tags:</h5>
+                                                <?php the_tags(','); ?>
+                                            </div>
                                         </div>
                                     </div>
                                 </article>
@@ -80,27 +88,7 @@ get_template_part('partials/slide-panel');
                         </div>
                     </div>
                     <div class="contact-container">
-                        <form action="#" class="comment-form waituk_contact-form">
-                            <fieldset>
-                                <h6 class="content-title contact-title">LEAVE YOUR COMMENT</h6>
-                                <div class="row">
-                                    <div class="col-sm-6 form-group">
-                                        <input placeholder="Full Name" type="text" class="form-control">
-                                    </div>
-                                    <div class="col-sm-6 form-group">
-                                        <input placeholder="Email Address" type="email" class="form-control">
-                                    </div>
-                                    <div class="col-sm-12 form-group">
-                                        <input placeholder="Website" type="text" class="form-control">
-                                    </div>
-                                    <div class="col-sm-12 form-group">
-                                        <textarea placeholder="Your Comment" class="form-control"></textarea>
-                                    </div>
-                                    <div class="col-sm-12 btn-holder">
-                                        <button type="submit" class="btn btn-black btn-full">POST COMMENT</button>
-                                    </div>
-                            </fieldset>
-                        </form>
+                        <?php comments_template('', true); ?>
                     </div>
                 </div>
             </div>
