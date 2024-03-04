@@ -18,25 +18,11 @@
                 <button data-filter=".ecommerce">ECOMMERCE</button>
             </li>
         </ul>
+
         <div class="container">
-            <?php get_template_part('loops/loop', 'portfolio'); ?>
-            <div class="row masonary-block grid">
-
-                <div class="gallery-item col-lg-6 col-xl-4 ecommerce">
-                    <?php get_template_part('loops/loop', 'ecommerce'); ?>
-                </div>
-
-                <div class="gallery-item col-lg-6 col-xl-4 ui photography">
-                    <?php get_template_part('loops/loop', 'photograpy'); ?>
-                </div>
-                <div class="gallery-item col-lg-6 col-xl-4 photography">
-
-                </div>
-
-                <div class="gallery-item col-lg-6 col-xl-4 programming">
-                    <?php get_template_part('loops/loop', 'programming'); ?>
-                </div>
-            </div>
+            <?php get_template_part('loops/loop', 'ecommerce'); ?>
+            <?php get_template_part('loops/loop', 'photography'); ?>
+            <?php get_template_part('loops/loop', 'programming'); ?>
         </div>
     </section>
     <section class="content-block">
@@ -210,11 +196,7 @@
     <section class="content-block">
         <div class="container">
             <div class="row multiple-row">
-                <div id="post-content" class="col-md-6 col-lg-4">
-                    <?php get_template_part('loops/loop', 'post'); ?>
-                </div>
-
-
+                <?php get_template_part('loops/loop', 'post'); ?>
             </div>
             <div class="btn-container full-width-btn top-space">
                 <!-- <button data-page="1" id="load-more-posts" class="btn btn-black">Load More Posts<span class="c-ripple js-ripple"><span class="c-ripple__circle"></span></span></button> -->
@@ -256,5 +238,6 @@
             </div>
         </div>
     </aside>
+
 </div>
 <!--/main content wrapper -->

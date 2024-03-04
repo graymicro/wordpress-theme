@@ -1,4 +1,3 @@
-
 <section class="content-block">
     <div class="container">
         <div class="heading bottom-space text-center">
@@ -7,11 +6,10 @@
         <div class="description text-center">
             <p>Delightful unreserved impossible few estimating men favourable see entreaties. She propriety immediate was improving. He or entrance humoured likewise moderate. Much nor game son say feel. Fat make met can must form into gate. Me we offending prevailed discovery. </p>
         </div>
+        <div class="row">
 
-        <?php $team_query = new WP_User_Query(array('role' => 'Editor')); ?>
-        <?php foreach ($team_query->results as $user) : ?>
-            <div class="row">
-
+            <?php $team_query = new WP_User_Query(array('role' => 'Editor')); ?>
+            <?php foreach ($team_query->results as $user) : ?>
                 <div class="col-md-4">
                     <figure class="team-box caption-fade-up top-l-space">
                         <div class="img-block">
@@ -20,14 +18,13 @@
                         <figcaption class="team-des-v2">
                             <span class="sub"></span>
                             <strong class="content-title name"><?php echo $user->display_name; ?></strong>
-                            <p><?php echo $user->description;?></p>
+                            <p><?php echo $user->description; ?></p>
                         </figcaption>
                     </figure>
                 </div>
 
-            </div>
-        <?php endforeach; ?>
+            <?php endforeach; ?>
 
+        </div>
     </div>
 </section>
-<section class="content-block">
