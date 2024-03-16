@@ -1,5 +1,5 @@
-<?php get_header(); ?>
 <?php
+
 get_template_part('partials/main-header');
 get_template_part('partials/slide-panel');
 ?>
@@ -31,7 +31,7 @@ get_template_part('partials/slide-panel');
                                         <div class="blog-img">
                                             <div class="image-wrap">
                                                 <figure class="">
-                                                    <img src="img/img-37.jpg" alt="images description">
+                                                    <img src="<?php echo get_the_post_thumbnail();?>">
                                                 </figure>
                                             </div>
                                         </div>
@@ -58,35 +58,6 @@ get_template_part('partials/slide-panel');
 
                         <?php endwhile; ?>
                     <?php endif; ?>
-                    <div class="content-block pt-5 pb-5">
-                        <div class="comment-block">
-                            <h6 class="content-title contact-title mb-3">3 Comments</h6>
-                            <div class="comment-slot">
-                                <div class="thumb circular-img">
-                                    <a href="#"><img src="img/people-01.jpg" alt="images description"></a>
-                                </div>
-                                <div class="comment-desc">
-                                    <h5><a href="#">Cleona Torez - Spain</a></h5>
-                                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.</p>
-                                    <div class="meta">Commented on
-                                        <time datetime="2016-07-19">14/1/2016</time> - <a href="#">Reply</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="comment-slot">
-                                <div class="thumb circular-img">
-                                    <a href="#"><img src="img/people-02.jpg" alt="images description"></a>
-                                </div>
-                                <div class="comment-desc">
-                                    <h5><a href="#">Steve Jurgen - Norway</a></h5>
-                                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.</p>
-                                    <div class="meta">Commented on
-                                        <time datetime="2016-07-19">14/1/2016</time> - <a href="#">Reply</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="contact-container">
                         <?php comments_template('', true); ?>
                     </div>
@@ -95,8 +66,7 @@ get_template_part('partials/slide-panel');
         </div>
     </section>
 </div>
+<?php
+get_template_part('partials/footer');
+?>
 <!--/main content wrapper -->
-
-
-
-<?php get_footer(); ?>

@@ -188,29 +188,29 @@ function sample_template_add_photography_custom_post_type()
 }
 
 
-// #########################################################
+// #######################- What we do custom post type -#########################
 
-add_action('init', 'sample_template_add_team_custom_post_type');
+add_action('init', 'what_we_do_custom_post_type');
 
-function sample_template_add_team_custom_post_type()
+function what_we_do_custom_post_type()
 {
 
     // Set UI labels for Custom Post Type
     $labels = array(
-        'name'                => 'Teams',
-        'singular_name'       => 'Teams',
-        'menu_name'           => 'Teams',
-        'parent_item_colon'   => 'Teams',
-        'all_items'           => 'All Members',
-        'view_item'           => 'View Members',
-        'add_new_item'        => 'Add New Members',
-        'add_new'             => 'Add Members',
-        'new_item'            => 'Add Members',
-        'edit_item'           => 'Edit Members',
-        'update_item'         => 'Update Members',
-        'search_items'        => 'Search Members',
+        'name'                => 'Services',
+        'singular_name'       => 'Services',
+        'menu_name'           => 'Services',
+        'parent_item_colon'   => 'Services',
+        'all_items'           => 'All Services',
+        'view_item'           => 'View Services',
+        'add_new_item'        => 'Add New Service',
+        'add_new'             => 'Add Service',
+        'new_item'            => 'Add Service',
+        'edit_item'           => 'Edit Service',
+        'update_item'         => 'Update Service',
+        'search_items'        => 'Search Service',
         'parent_item_colon'   => 'Team Bese',
-        'not_found'           => 'No Members found',
+        'not_found'           => 'No Services found',
         'not_found_in_trash'  => 'Not found in Trash',
     );
 
@@ -218,7 +218,7 @@ function sample_template_add_team_custom_post_type()
 
     $args = array(
 
-        'description'         => 'Contents of template Products',
+        'description'         => 'What we Do custom post type',
         'labels'              => $labels,
         // Features this CPT supports in Post Editor
         'supports'            => array('title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields',),
@@ -240,13 +240,13 @@ function sample_template_add_team_custom_post_type()
         'exclude_from_search' => false,
         'publicly_queryable'  => true,
         'query_var'           => true,
-        'rewite'              => array('slug' => 'Team'),
-        'menu_icon'           => 'dashicons-align-wide',
+        'rewite'              => array('slug' => 'services'),
+        'menu_icon'           => 'dashicons-table-col-before',
         'capability_type'     => 'post',
         'show_in_rest' => true,
 
     );
 
     // Registering your Custom Post Type
-    register_post_type('Team', $args);
+    register_post_type('services', $args);
 }

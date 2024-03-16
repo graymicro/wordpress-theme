@@ -205,6 +205,7 @@ html::-webkit-scrollbar-thumb {
  *
  * ========================================================= */
 
+
 .slider {
     display: inline-block;
     vertical-align: middle;
@@ -3618,7 +3619,13 @@ em.state-invalid {
     font-size: inherit;
 }
 
+.menu-main-container{
+    padding-right: 90px;
+    
+}
+
 .main-header .navbar .navbar-nav li {
+    display: inline-block;
     text-transform: uppercase;
     font-size: .75rem;
     font-weight: 500;
@@ -3626,12 +3633,16 @@ em.state-invalid {
     -webkit-transition: all linear .2s;
     -o-transition: all linear .2s;
     transition: all linear .2s;
+    
+    
 }
 
 .main-header .navbar .navbar-nav li a {
-    color: #fff;
-    padding: 2.25rem 1rem;
-    display: inline-block;
+    
+    color: white;
+    padding: 2.25rem 1.5rem;
+    
+    
 }
 
 .main-header .navbar .navbar-nav li a:hover,

@@ -24,6 +24,8 @@ function dokmeh_test()
     add_image_size('main-thumbnails', 370, 400);
     add_image_size('team-thumbnails', 370, 555);
     add_image_size('post-thumbnails', 800, 533);
+    add_image_size('post-thumbnails-footer', 55, 55);
+
 }
 add_action('after_setup_theme', 'dokmeh_test');
 
@@ -40,8 +42,6 @@ function my_theme_scripts()
     wp_localize_script('load-script', 'my_ajax_object', array('ajaxurl' => admin_url('admin-ajax.php')));
 
     //register download file counter
-    wp_enqueue_script('download-counter-script', get_template_directory_uri() . '/js/downloadfile.js', array('jquery'), null, true);
-    wp_localize_script('download-counter-script', 'ajax_object', array('ajaxurl' => admin_url('admin-ajax.php')));
 }
 add_action('wp_enqueue_scripts', 'my_theme_scripts');
 
